@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dim_5_dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="@dimen/dim_10_dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+
+        <ImageView
+            android:id="@+id/imgCardPersonagem"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_150_dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvNameGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_10_dp"
+            android:layout_marginTop="@dimen/dim_16_dp"
+            android:maxLines="2"
+            android:text="@string/nome"
+            android:layout_marginEnd="@dimen/dim_10_dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textAllCaps="true"
+            android:textColor="@color/colorGrayDark"
+            android:textSize="@dimen/dim_20_sp"
+            app:layout_constraintStart_toStartOf="@id/imgCardPersonagem"
+            app:layout_constraintTop_toBottomOf="@+id/imgCardPersonagem" />
+
+        <TextView
+            android:id="@+id/tvDataAno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dim_5_dp"
+            android:layout_marginEnd="@dimen/dim_10_dp"
+            android:layout_marginStart="@dimen/dim_10_dp"
+            android:layout_marginBottom="@dimen/dim_16_dp"
+            android:text="@string/ano"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/dim_16_sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tvNameGame"
+            app:layout_constraintTop_toBottomOf="@id/tvNameGame" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
